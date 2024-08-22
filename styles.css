@@ -616,3 +616,86 @@ font-size: var(--norma-font);
     }
 }
 
+/* Media query for screens smaller than 768px (common breakpoint for tablets and phones) */
+@media (max-width: 768px) {
+    
+    /* Adjust the .home section for mobile screens */
+    .home {
+        display: block; /* Stack elements vertically */
+        padding: 50px 5%;
+        grid-gap: 2cm;
+    }
+
+    /* Center the home-content and image */
+    .home-content, .home_image {
+        text-align: center;
+        margin-bottom: 30px; /* Add some space between elements */
+    }
+
+    /* Ensure the image is responsive */
+    .img-box {
+        max-width: 100%; /* Ensure it fits within the parent container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust about section */
+    .about {
+        flex-direction: column;
+        padding: 50px 5%;
+        grid-gap: 1cm;
+    }
+
+    .about .img-about img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust the skills section */
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 90%;
+    }
+    
+    /* Adjust the services section */
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 90%;
+    }
+
+    /* Center and adjust the logo and navigation */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navlist {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ensure the timeline fits well on mobile */
+    .timeline {
+        padding: 30px 5%;
+    }
+
+    .line {
+        left: 2.5%; /* Adjust the line position on mobile */
+    }
+
+    .event {
+        text-align: center;
+    }
+}
